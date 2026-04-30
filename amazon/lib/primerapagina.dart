@@ -1,3 +1,4 @@
+import 'package:amazon/components/barra.dart';
 import 'package:flutter/material.dart';
 
 class Primerapagina extends StatelessWidget {
@@ -5,6 +6,10 @@ class Primerapagina extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: Barra(),
+      ),  
+    );
   }
 }

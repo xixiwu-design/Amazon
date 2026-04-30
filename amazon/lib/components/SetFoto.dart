@@ -4,8 +4,7 @@ import 'package:flutter/material.dart';
 
 class SetFoto extends StatelessWidget {
   final String url;
-  final double height; // 👈 你输入“长度（高度）”
-
+  final double height; 
   const SetFoto({
     super.key,
     required this.url,
