@@ -13,12 +13,12 @@ class Barra extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 100,
-            color: Colors.black,
+            color: const Color.fromARGB(255, 19, 25, 33),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: const [
                SetFoto(url: 
-               "amzes.png", height: 100)
+               "lib/images/amzes.png", height: 100),
               ],
             ),
           ),
@@ -27,7 +27,7 @@ class Barra extends StatelessWidget {
           Container(
             width: double.infinity,
             height: 100,
-          color: Colors.black,
+          color: const Color.fromARGB(255,37, 150, 190),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: const [
