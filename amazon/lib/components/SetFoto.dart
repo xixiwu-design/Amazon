@@ -12,11 +12,11 @@ class SetFoto extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        return Image.asset(url, height: height);
-      },
+    Widget build(BuildContext context) {
+    return Image.asset(
+      url,
+      height: height,
+      fit: BoxFit.contain,
     );
   }
 
