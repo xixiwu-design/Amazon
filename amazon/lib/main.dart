@@ -1,4 +1,5 @@
 import 'package:amazon/primerapagina.dart';
+import 'package:amazon/segundapagina.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MainApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       home: 
-          Primerapagina(),
+          Segundapagina(),
         
       
     );
