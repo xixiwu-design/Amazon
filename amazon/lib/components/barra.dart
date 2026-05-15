@@ -44,7 +44,7 @@ class Barra extends StatelessWidget {
 
                 //buscador
                 Container(
-                  height: 40,
+                  height: 45,
                   width: 800,
                   decoration: BoxDecoration(
                     color: Colors.white,
@@ -54,19 +54,31 @@ class Barra extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        height: 40,
-                        width: 170,
+                        height: 45,
+                        width: 175,
                         alignment: Alignment.center,
                         decoration: BoxDecoration(
                           color: const Color.fromARGB(255, 202, 202, 202),
                           borderRadius: BorderRadius.circular(4),
                         ),
-                        child: const Text(
-                          "Todos los departamentos",
-                          style: TextStyle(
-                            fontSize: 12,
-                            color: Color.fromARGB(255, 114, 114, 114),
-                          ),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10),
+                              child: Text(
+                                "Todos los departamentos",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Color.fromARGB(255, 71, 71, 71),
+                                ),
+                              ),
+                            ),
+                            Icon(
+                              Icons.arrow_drop_down,
+                              color: const Color.fromARGB(255, 71, 71, 71),
+                              size: 20,
+                            ),
+                          ],
                         ),
                       ),
 
@@ -79,6 +91,21 @@ class Barra extends StatelessWidget {
                             ),
                             border: InputBorder.none,
                           ),
+                        ),
+                      ),
+
+                      Container(
+                        height: 45,
+                        width: 45,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                          color: const Color.fromARGB(255, 254, 189, 105),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                        child: const Icon(
+                          Icons.search,
+                          color: Colors.black,
+                          size: 30,
                         ),
                       ),
                     ],
@@ -168,14 +195,101 @@ class Barra extends StatelessWidget {
 
           Container(
             width: double.infinity,
-            height: 100,
-            color: const Color.fromARGB(255, 35, 47, 62),
+            height: 60,
+            color: Color.fromARGB(255, 35, 47, 62),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: const [
-                Icon(Icons.menu),
-                Text('Amazon'),
-                Icon(Icons.shopping_cart),
+              children: [
+                Row(
+                  children: [
+                    //Todo
+                    Container(child: Icon(Icons.menu, color: Colors.white)),
+                    Text(
+                      'Todo',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ],
+                ),
+                //Amazon Haul
+                Text(
+                  'Amazon Haul',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Supermercado
+                Row(
+                  children: [
+                    Text(
+                      'Supermercado',
+                      style: TextStyle(color: Colors.white, fontSize: 13),
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down,
+                      color: const Color.fromARGB(255, 202, 202, 202),
+                      size: 20,
+                    ),
+                  ],
+                ),
+                //Últimas Novedades
+                Text(
+                  'Últimas Novedades',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Los más vendidos
+                Text(
+                  'Los más vendidos',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Amazon Basics
+                Text(
+                  'Amazon Basics',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Ofertas
+                Text(
+                  'Ofertas',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Hogar y cocina
+                Text(
+                  'Hogar y cocina',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Informática
+                Text(
+                  'Informática',
+                  style: TextStyle(color: Colors.white, fontSize: 13),
+                ),
+                //Prime
+                Row(
+                  children: [
+                    Text(
+                      'Prime',
+                      style: TextStyle(color: Colors.white, fontSize: 13),
+                    ),
+                    Icon(
+                      Icons.arrow_drop_down,
+                      color: const Color.fromARGB(255, 202, 202, 202),
+                      size: 20,
+                    ),
+                  ],
+                ),
+                //Off Campus· Nueva serie original
+                Row(
+                  children: [
+                    Text(
+                      'Off Campus·',
+                      style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'Nueva serie original',
+                      style: TextStyle(color: Colors.white, fontSize: 20),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
