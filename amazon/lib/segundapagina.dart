@@ -87,7 +87,7 @@ class Segundapagina extends StatelessWidget {
 
                           TextSpan(
                             text:
-                                'The prices of products sold on Amazon include VAT. Depending on your delivery address, VAT may vary at the checkout. For more information, click here. Hard Disk Size: 512 GB',
+                                'The prices of products sold on Amazon include VAT. Depending on your delivery address, VAT may vary at the checkout. For more information, click here. \nHard Disk Size: 512 GB\n',
                           ),
 
                           WidgetSpan(
@@ -138,7 +138,7 @@ class Segundapagina extends StatelessWidget {
 
                   const SizedBox(width: 20),
 
-                  Expanded(
+                 Expanded(
                     flex: 2,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,

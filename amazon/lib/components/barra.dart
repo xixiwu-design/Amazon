@@ -109,7 +109,7 @@ class Barra extends StatelessWidget {
                           onTap: () {
                             String text = search.text;
 
-                            if (text.toLowerCase() == "laptop" || text.toLowerCase() == "portatil") {
+                            if (text.toLowerCase() == "laptop" || text.toLowerCase() == "portatil" ) {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
