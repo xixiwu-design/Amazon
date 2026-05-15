@@ -11,21 +11,24 @@ class Primerapagina extends StatelessWidget {
       body: Stack(
         children: [
           Row(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    SetFoto(
-      url: "lib/images/anuncio.jpeg",
-      height: 800,
-    ),
-  ],
-),
-          Column(children: [
-            //Barra de busqueda
-            Barra(),
-            SizedBox(height: 300),
-Text("aqq",style:TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold) ,),
-            
-          ]),
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [SetFoto(url: "lib/images/anuncio.jpeg", height: 800)],
+          ),
+          Column(
+            children: [
+              //Barra de busqueda
+              Barra(),
+              SizedBox(height: 300),
+              Text(
+                "aqq",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
