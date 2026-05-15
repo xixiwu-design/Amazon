@@ -14,11 +14,11 @@ class Barra1 extends StatelessWidget {
         children: [
           Text(
             sub,
-            style: TextStyle(fontSize: 11, color: const Color.fromARGB(255, 207, 207, 207)),
+            style: TextStyle(fontSize: 12, color: const Color.fromARGB(255, 207, 207, 207)),
           ),
           Text(
             title,
-            style: TextStyle(fontSize: 13, color: Colors.white, fontWeight: FontWeight.bold),
+            style: TextStyle(fontSize: 14, color: Colors.white, fontWeight: FontWeight.bold),
           ),
         ],
       ),
